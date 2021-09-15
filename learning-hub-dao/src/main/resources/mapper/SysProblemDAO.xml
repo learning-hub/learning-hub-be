@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learning.hub.dao.mapper.SysProblemDAO">
+    <resultMap id="BaseResultMap" type="com.learning.hub.dao.entity.SysProblemDO">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="title" javaType="VARCHAR" property="title"/>
+        <result column="tags" javaType="VARCHAR" property="tags"/>
+        <result column="source" javaType="VARCHAR" property="source"/>
+        <result column="ac_count" javaType="INT" property="acCount"/>
+        <result column="submit_count" javaType="INT" property="submitCount"/>
+        <result column="type" javaType="INT" property="type"/>
+        <result column="xs_cache" javaType="TINYINT" property="xsCache"/>
+        <result column="xs_hidden" javaType="TINYINT" property="xsHidden"/>
+        <result column="xs_disable" javaType="TINYINT" property="xsDisable"/>
+        <result column="deleted_at" javaType="TIMESTAMP" property="deletedAt"/>
+        <result column="created_at" javaType="TIMESTAMP" property="createdAt"/>
+        <result column="updated_at" javaType="TIMESTAMP" property="updatedAt"/>
+        <result column="order" javaType="INT" property="order"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, title, tags, source, ac_count, submit_count, `type`, xs_cache, xs_hidden, xs_disable,
+        deleted_at, created_at, updated_at, `order`
+    </sql>
+
+</mapper>

@@ -1,2 +1,5 @@
-server:
-  port: 8080
+spring:
+  profiles:
+    group:
+      dev: service,service-dev
+    active: dev

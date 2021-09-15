@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learning.hub.dao.mapper.SysGameOrganDAO">
+    <resultMap id="BaseResultMap" type="com.learning.hub.dao.entity.SysGameOrganDO">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="game_id" javaType="BIGINT" property="gameId"/>
+        <result column="organ_id" javaType="BIGINT" property="organId"/>
+        <result column="ac_count" javaType="INT" property="acCount"/>
+        <result column="ac_rate" javaType="INT" property="acRate"/>
+        <result column="submit_count" javaType="INT" property="submitCount"/>
+        <result column="last_ac_time" javaType="TIMESTAMP" property="lastAcTime"/>
+        <result column="xs_disable" javaType="TINYINT" property="xsDisable"/>
+        <result column="deleted_at" javaType="TIMESTAMP" property="deletedAt"/>
+        <result column="created_at" javaType="TIMESTAMP" property="createdAt"/>
+        <result column="updated_at" javaType="TIMESTAMP" property="updatedAt"/>
+        <result column="order" javaType="INT" property="order"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, game_id, organ_id, ac_count, ac_rate, submit_count, last_ac_time, xs_disable,
+        deleted_at, created_at, updated_at, `order`
+    </sql>
+
+</mapper>

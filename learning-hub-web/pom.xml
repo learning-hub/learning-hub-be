@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.learning.hub</groupId>
-            <artifactId>learning-hub-common</artifactId>
+            <artifactId>learning-hub-service</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
