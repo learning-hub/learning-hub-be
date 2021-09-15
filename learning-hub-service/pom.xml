@@ -20,8 +20,12 @@
     <dependencies>
         <dependency>
             <groupId>com.learning.hub</groupId>
-            <artifactId>learning-hub-common</artifactId>
+            <artifactId>learning-hub-dao</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learning.hub.dao.mapper.SysJudgerDAO">
+    <resultMap id="BaseResultMap" type="com.learning.hub.dao.entity.SysJudgerDO">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="user_id" javaType="BIGINT" property="userId"/>
+        <result column="organ_id" javaType="BIGINT" property="organId"/>
+        <result column="ip" javaType="VARCHAR" property="ip"/>
+        <result column="game_id" javaType="BIGINT" property="gameId"/>
+        <result column="game_problem_id" javaType="BIGINT" property="gameProblemId"/>
+        <result column="result" javaType="INT" property="result"/>
+        <result column="message" javaType="VARCHAR" property="message"/>
+        <result column="jub_id" javaType="BIGINT" property="jubId"/>
+        <result column="xs_disable" javaType="TINYINT" property="xsDisable"/>
+        <result column="deleted_at" javaType="TIMESTAMP" property="deletedAt"/>
+        <result column="created_at" javaType="TIMESTAMP" property="createdAt"/>
+        <result column="updated_at" javaType="TIMESTAMP" property="updatedAt"/>
+        <result column="order" javaType="INT" property="order"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, user_id, organ_id, ip, game_id, game_problem_id, result, message, jub_id,
+        xs_disable, deleted_at, created_at, updated_at, `order`
+    </sql>
+
+</mapper>
